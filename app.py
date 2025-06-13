@@ -15,8 +15,8 @@ kmeans = joblib.load('kmeans.pkl')
 nb_model = joblib.load('model_nb.pkl')
 
 # Load data
-url = "https://docs.google.com/spreadsheets/d/13zRdFmblcNeL_vHKP9no0h3ZYv8h5FS4/edit?usp=sharing&ouid=117435365842666011983&rtpof=true&sd=true"
-df = pd.read_excel(url)
+data_path = "E-Commerce Customer Behavior Dataset.xlsx"
+df = pd.read_excel(data_path)
 
 # Fitur dan transformasi
 selected_features = ['amount_spent', 'transaction_frequency', 'avg_time_on_site', 'pages_visited']
