@@ -15,7 +15,7 @@ kmeans = joblib.load('kmeans.pkl')
 nb_model = joblib.load('model_nb.pkl')
 
 # Load data
-data_path = "/content/drive/MyDrive/ecommerce-segmentation/E-Commerce Customer Behavior Dataset.xlsx"
+data_path = "E-Commerce Customer Behavior Dataset.xlsx"
 df = pd.read_excel(data_path)
 
 # Fitur dan transformasi
